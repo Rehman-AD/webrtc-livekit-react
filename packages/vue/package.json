@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "typings": "dist/index.d.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "name": "@livekit/components-vue",
+  "author": "LiveKit",
+  "module": "dist/index.js",
+  "devDependencies": {
+    "vue": "latest",
+    "rxjs": "^7.5.6"
+  },
+  "dependencies": {
+    "@livekit/components-core": "0.1.0"
+  },
+  "peerDependencies": {
+    "livekit-client": "latest",
+    "vue": "latest"
+  }
+}

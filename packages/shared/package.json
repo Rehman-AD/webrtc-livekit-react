@@ -14,34 +14,22 @@
     "node": ">=10"
   },
   "scripts": {
-    "dev": "tsup src/index.ts --format esm --onSuccess=\"tsc --emitDeclarationOnly --declaration\" --watch",
-    "build": "tsup src/index.ts --format esm --onSuccess=\"tsc --emitDeclarationOnly --declaration\""
+    "dev": "tsc -w",
+    "build": "tsc"
   },
-  "peerDependencies": {},
+  "peerDependencies": {
+    "livekit-client": "latest",
+    "livekit-server-sdk": "latest"
+  },
   "name": "@livekit/components-core",
   "author": "LiveKit",
   "module": "dist/index.js",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.22.0",
-    "@typescript-eslint/parser": "^5.22.0",
-    "eslint": "^8.15.0",
-    "eslint-config-prettier": "^6.7.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-config-standard-react": "^9.2.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^11.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "prettier": "^2.3.1",
-    "tslib": "^2.4.0",
-    "tsup": "^6.2.3",
+    "livekit-server-sdk": "latest",
     "typescript": "^4.7.4"
   },
   "dependencies": {
     "jose": "^4.8.3",
-    "livekit-client": "latest",
-    "livekit-server-sdk": "latest",
     "rxjs": "^7.5.6"
   }
 }
