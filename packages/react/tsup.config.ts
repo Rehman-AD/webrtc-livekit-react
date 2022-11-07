@@ -1,11 +1,8 @@
 import { defineConfig } from 'tsup';
 
+import defaults from '../../tsup.config';
+
 export default defineConfig({
-  entry: ['src/index.ts'],
-  format: ['cjs', 'esm'],
-  splitting: false,
-  sourcemap: true,
-  dts: true,
-  clean: true,
-  target: 'ES6',
+  ...defaults,
+  minify: true,
 });
