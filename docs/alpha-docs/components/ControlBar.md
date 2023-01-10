@@ -24,4 +24,5 @@ The ControlBar prefab component gives the user the basic user interface to contr
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | variation | `"minimal" \| "verbose" \| "textOnly"` |  |  |
+| controls | `ControlBarControls` |  |  |
 
