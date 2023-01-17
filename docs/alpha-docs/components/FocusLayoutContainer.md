@@ -17,5 +17,4 @@ The contents of this file can be replaced at any time which would lead to the lo
 | --- | --- | --- | --- |
 | trackParticipantPair | `TrackParticipantPair` |  |  |
 | participants | `Participant[]` |  |  |
-| onParticipantClick | `((evt: ParticipantClickEvent) => void)` |  |  |
 

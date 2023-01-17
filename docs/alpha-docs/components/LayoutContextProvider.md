@@ -16,5 +16,5 @@ The contents of this file can be replaced at any time which would lead to the lo
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | onPinChange | `((state: PinState) => void)` |  |  |
-| onChatChange | `((state: WidgetState) => void)` |  |  |
+| onWidgetChange | `((state: WidgetState) => void)` |  |  |
 

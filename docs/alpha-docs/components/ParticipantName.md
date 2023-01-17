@@ -20,3 +20,10 @@ The ParticipantName component displays the name of the participant as a string w
 
 <!--USAGE_INSERT_MARKER-->
 
+
+## Props
+
+| Name | Type | Default | Description |
+| --- | --- | --- | --- |
+| participant | `Participant` |  |  |
+
