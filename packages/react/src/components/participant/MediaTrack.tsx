@@ -4,6 +4,9 @@ import { useMediaTrackBySourceOrName } from '../../hooks';
 import { ParticipantClickEvent } from '@livekit/components-core';
 import { useEnsureParticipant } from '../../context';
 
+/**
+ * @deprecated Use `AudioTrack` or `VideoTrack` instead
+ */
 export type MediaTrackProps<T extends HTMLMediaElement = HTMLMediaElement> =
   React.HTMLAttributes<T> &
     ({ source: Track.Source } | { name: string; kind: Track.Kind }) & {
@@ -13,22 +16,7 @@ export type MediaTrackProps<T extends HTMLMediaElement = HTMLMediaElement> =
     };
 
 /**
- * The MediaTrack component is responsible for rendering participant media tracks like `camera`, `microphone` and `screen_share`.
- * This component must have access to the participant's context, or alternatively pass it a `Participant` as a property.
- *
- * Children of this component are used as placeholders when the underlying (video) track is muted or not available
- *
- * @example
- * ```tsx
- * {...}
- *   <ParticipantTile>
- *     <MediaTrack source={Track.Source.Camera} />
- *     <MediaTrack source={Track.Source.Microphone} />
- *   </ParticipantTile>
- * {...}
- * ```
- *
- * @see `ParticipantTile` component
+ * @deprecated This component will be removed in the next version. Use `AudioTrack` or `VideoTrack` instead
  */
 export function MediaTrack({
   onTrackClick,
