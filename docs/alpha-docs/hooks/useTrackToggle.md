@@ -16,6 +16,7 @@ The contents of this file can be replaced at any time which would lead to the lo
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | onChange | `((enabled: boolean) => void)` |  |  |
-| source | `Source` |  |  |
+| source | `ToggleSource` |  |  |
 | initialState | `boolean` |  |  |
+| captureOptions | `VideoCaptureOptions \| AudioCaptureOptions \| ScreenShareCaptureOptions` |  |  |
 

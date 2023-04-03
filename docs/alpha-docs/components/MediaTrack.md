@@ -6,20 +6,9 @@ The contents of this file can be replaced at any time which would lead to the lo
 
 # MediaTrack
 
-The MediaTrack component is responsible for rendering participant media tracks like `camera`, `microphone` and `screen_share`. This component must have access to the participant's context, or alternatively pass it a `Participant` as a property.  Children of this component are used as placeholders when the underlying (video) track is muted or not available
-
 ## Usage
 
-```tsx
-{...}
-  <ParticipantTile>
-    <MediaTrack source={Track.Source.Camera} />
-    <MediaTrack source={Track.Source.Microphone} />
-  </ParticipantTile>
-{...}
-```
-
-<!--USAGE_INSERT_MARKER-->
+<!--USAGE_INSERT_MARKER->
 
 
 ## Props
@@ -27,7 +16,9 @@ The MediaTrack component is responsible for rendering participant media tracks l
 | Name | Type | Default | Description |
 | --- | --- | --- | --- |
 | source | `Source` |  |  |
+| name | `string` |  |  |
 | participant | `Participant` |  |  |
+| publication | `TrackPublication` |  |  |
 | onTrackClick | `((evt: ParticipantClickEvent) => void)` |  |  |
 | onSubscriptionStatusChanged | `((subscribed: boolean) => void)` |  |  |
 
