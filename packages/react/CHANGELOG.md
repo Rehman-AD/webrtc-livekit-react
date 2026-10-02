@@ -1,5 +1,22 @@
 # @livekit/components-react
 
+## 2.9.25
+
+### Patch Changes
+
+- Keep chat setup stable when equivalent options are passed inline, preventing render loops and message history resets.
+
+- Update the local screen share track returned by useSession when screen sharing starts or stops.
+
+- Prevent outdated useToken requests from overwriting the token after the endpoint, room, or user changes.
+
+- Detect horizontal swipes that start or end at a clientX coordinate of zero.
+
+- Clear stale useParticipantAttribute values when switching to a participant or key without that attribute.
+
+- Updated dependencies []:
+  - @livekit/components-core@0.12.16
+
 ## 2.9.24
 
 ### Patch Changes

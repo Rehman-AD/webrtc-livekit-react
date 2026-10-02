@@ -1,5 +1,12 @@
 # @livekit/component-example-next
 
+## 0.2.78
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @livekit/components-react@2.9.25
+
 ## 0.2.77
 
 ### Patch Changes

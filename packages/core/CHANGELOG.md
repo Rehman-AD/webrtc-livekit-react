@@ -1,5 +1,18 @@
 # @livekit/components-core
 
+## 0.12.16
+
+### Patch Changes
+
+- Register chat receivers for each channel topic so additional topics in the same room receive messages.  
+  Share one disconnect listener per room and clean up each topic once, including repeated chat consumers.
+
+- fix(core): key the text stream observable cache on the room instance so it survives a disconnect
+
+- Handle simultaneous track additions and removals without throwing during visual layout updates.
+
+- Allow data messages to be sent without a sending-state subscriber and share the current sending state with all subscribers.
+
 ## 0.12.15
 
 ### Patch Changes

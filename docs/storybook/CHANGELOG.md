@@ -1,5 +1,13 @@
 # @livekit/component-docs-storybook
 
+## 1.0.105
+
+### Patch Changes
+
+- Updated dependencies []:
+  - @livekit/components-react@2.9.25
+  - @livekit/agents-ui@1.0.9
+
 ## 1.0.104
 
 ### Patch Changes
